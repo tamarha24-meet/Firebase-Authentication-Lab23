@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
-    Great Job!
+
+    <form method="POST" action="/add_tweet">
+        <!-- Heading -->
+        <h4>
+        Tweet!
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+        enter your tweets title & text.
+        </p>
+
+        <!-- Title -->
+        <div>
+            <label>Title*</label>
+            <div>
+                <input type="text"  name="title" required>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div>
+            <label>Text*</label>
+            <div class="input-group">
+                <input type="text"  name="tweet_text" required>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit"/>
+        </div>
+</form>
 </body>
 </html>

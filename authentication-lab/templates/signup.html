@@ -5,7 +5,7 @@
     <title>Signup</title>
 </head>
 <body>
-    <form method="post" action="/signup">
+    <form method="POST" action="/signup">
         <!-- Heading -->
         <h4>
             Create an account
@@ -16,7 +16,7 @@
             Please fill up your information below to sign up.
         </p>
 
-        <!-- Email -->
+         <!-- Email -->
         <div>
             <label>Email address*</label>
             <div>
@@ -32,12 +32,37 @@
             </div>
         </div>
         
+
+        <!-- Name -->
+        <div>
+            <label>Full name*</label>
+            <div>
+                <input type="text"  name="full_name" required>
+            </div>
+        </div>
+
+        <!-- Username -->
+        <div>
+            <label>Username*</label>
+            <div class="input-group">
+                <input type="text"  name="username" required>
+            </div>
+        </div>
+
+        <!-- Name -->
+        <div>
+            <label>Bio</label>
+            <div>
+                <input type="text"  name="bio" maxlength="280">
+            </div>
+        </div>
+        
         <!-- Button -->
         <div>
             <input type="submit"/>
         </div>
     </form>
     <br>
-    <a href="/"><button>signin</button></a>
+    <a href="/">go to signin</a>
 </body>
 </html>
