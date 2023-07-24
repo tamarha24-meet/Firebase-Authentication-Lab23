@@ -72,9 +72,10 @@ def add_tweet():
     if request.method == 'POST':
 
         try:
+            
             UID = login_session['user']['localId']
             tweet = {"title": request.form['title'], "text":request.form['tweet_text'], "uid": UID}
-            db.child("Tweets").child(UID).set(tweet)
+            db.child("Tweets").push(tweet)
 
             return redirect(url_for('all_tweets'))
 

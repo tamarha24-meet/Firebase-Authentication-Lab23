@@ -7,9 +7,17 @@
 
 <body>
 
-    <h1> all tweets </h1>
+    <h1> all tweets: </h1>
+    {% for tweet in tweets %}
 
+        <div>
+        <h2> tweet title: {{tweets[tweet]["title"]}} </h2>
+        <p> {{tweets[tweet]["text"]}} </p>
+        <div>
 
+    {% endfor %}
+
+   <a href="/add_tweet"><button> add another tweet </button></a>
 
 
 </body>
